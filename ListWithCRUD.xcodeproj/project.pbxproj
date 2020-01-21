@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01021ED123D6F46700F6EA2F /* IdeaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01021ED023D6F46700F6EA2F /* IdeaDetailViewController.swift */; };
 		01E20A4423D5EC980064CBB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E20A4323D5EC980064CBB1 /* AppDelegate.swift */; };
 		01E20A4623D5EC980064CBB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E20A4523D5EC980064CBB1 /* SceneDelegate.swift */; };
 		01E20A4823D5EC980064CBB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E20A4723D5EC980064CBB1 /* ViewController.swift */; };
 		01E20A4B23D5EC980064CBB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E20A4923D5EC980064CBB1 /* Main.storyboard */; };
 		01E20A4D23D5ECAB0064CBB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E20A4C23D5ECAB0064CBB1 /* Assets.xcassets */; };
 		01E20A5023D5ECAB0064CBB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E20A4E23D5ECAB0064CBB1 /* LaunchScreen.storyboard */; };
+		01E20A5923D5ECE60064CBB1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E20A5823D5ECE60064CBB1 /* CoreData.framework */; };
+		01E20A5E23D5EDCA0064CBB1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01E20A5C23D5EDCA0064CBB1 /* Model.xcdatamodeld */; };
+		01E20A6023D5F5A90064CBB1 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E20A5F23D5F5A90064CBB1 /* Repo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01021ED023D6F46700F6EA2F /* IdeaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaDetailViewController.swift; sourceTree = "<group>"; };
 		01E20A4023D5EC980064CBB1 /* ListWithCRUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListWithCRUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E20A4323D5EC980064CBB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01E20A4523D5EC980064CBB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		01E20A4C23D5ECAB0064CBB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01E20A4F23D5ECAB0064CBB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01E20A5123D5ECAB0064CBB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01E20A5823D5ECE60064CBB1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		01E20A5D23D5EDCA0064CBB1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		01E20A5F23D5F5A90064CBB1 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E20A5923D5ECE60064CBB1 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				01E20A4223D5EC980064CBB1 /* ListWithCRUD */,
 				01E20A4123D5EC980064CBB1 /* Products */,
+				01E20A5723D5ECE60064CBB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +73,19 @@
 				01E20A4C23D5ECAB0064CBB1 /* Assets.xcassets */,
 				01E20A4E23D5ECAB0064CBB1 /* LaunchScreen.storyboard */,
 				01E20A5123D5ECAB0064CBB1 /* Info.plist */,
+				01E20A5C23D5EDCA0064CBB1 /* Model.xcdatamodeld */,
+				01E20A5F23D5F5A90064CBB1 /* Repo.swift */,
+				01021ED023D6F46700F6EA2F /* IdeaDetailViewController.swift */,
 			);
 			path = ListWithCRUD;
+			sourceTree = "<group>";
+		};
+		01E20A5723D5ECE60064CBB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01E20A5823D5ECE60064CBB1 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +161,10 @@
 			files = (
 				01E20A4823D5EC980064CBB1 /* ViewController.swift in Sources */,
 				01E20A4423D5EC980064CBB1 /* AppDelegate.swift in Sources */,
+				01E20A6023D5F5A90064CBB1 /* Repo.swift in Sources */,
 				01E20A4623D5EC980064CBB1 /* SceneDelegate.swift in Sources */,
+				01021ED123D6F46700F6EA2F /* IdeaDetailViewController.swift in Sources */,
+				01E20A5E23D5EDCA0064CBB1 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.steven.D.dog.ListWithCRUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.steven.D.dog.ListWithCRUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -336,6 +360,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		01E20A5C23D5EDCA0064CBB1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				01E20A5D23D5EDCA0064CBB1 /* Model.xcdatamodel */,
+			);
+			currentVersion = 01E20A5D23D5EDCA0064CBB1 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 01E20A3823D5EC980064CBB1 /* Project object */;
 }
